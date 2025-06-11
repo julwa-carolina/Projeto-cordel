@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor_um: #44474D;
+    --cor_dois: #6C6B68;
+    --cor_tres: #9CA5B1;
+    --cor_quatro: #D5D0C4;
+    --cor_cinco: #877C73;
+    --fonte_prin: 'Passion One', sans-serif;
+    --fonte_dois: Verdana, Tahoma, sans-serif;
+    --fonte_tres: 'Sriracha', cursive;
+}
+
+html, body {
+    min-height: 100vh;
+    min-width: 500px;
+    background-color: var(--cor_quatro);
+
+}
+
+header {
+    background-color: var(--cor_um);
+    color: var(--cor_quatro);
+    text-align: center;
+    margin: auto;
+    font-family: var(--fonte_dois);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header > h1 {
+    padding-top: 70px;
+    font-size: 200px;
+    font-variant: small-caps;
+    font-family: var(--fonte_prin);
+}
+header > p {
+    padding-bottom: 70px;
+}
+a {
+    color: white;
+    margin-top: 30px;
+    text-decoration: none;
+}
+main {
+    max-width: 1200px;
+    min-width: 280px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    background-color: var(--cor_tres);
+}
+section {
+    font-family: var(--fonte_tres);
+    line-height: 2.2em;
+    padding-top: 10vh;
+    padding-left: 40px;
+    padding-bottom: 10vh;
+    font-size: 40px;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.normal, section.final {
+    background-color: white;
+    color: black;
+
+}
+
+section.flor, section.borboleta {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.61);
+}
+
+section.flor> p, section.borboleta > p  {
+    color: white;
+    display: inline-block;
+    padding: 5px;
+    max-width: 550px;
+    min-width: 280px;
+    background-color: rgba(0, 0, 0, 0.644);
+    text-shadow: 1px 1px 0px rgb(0, 0, 0);
+}
+
+section.flor {
+    background-image: url('imagens/marguerite-5959944_1280.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section.borboleta {
+    background-image: url('imagens/mountain-8153221_1280.jpg');
+    background-size: cover;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+section.final {
+    border-radius: 0px 0px 10px 10px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: var(--fonte_dois);
+    margin-top: 50px;
+}
